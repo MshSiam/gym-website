@@ -1,8 +1,9 @@
 import "./App.css"
+import Hero from "./components/hero/Hero"
 function App() {
   return (
     <div className="App">
-      <h1>Gym Website</h1>
+      <Hero></Hero>
     </div>
   )
 }
