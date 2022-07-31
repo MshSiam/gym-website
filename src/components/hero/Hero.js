@@ -4,17 +4,23 @@ import css from "./hero.css"
 import hero_image from "../../assets/hero_image.png"
 import hero_image_back from "../../assets/hero_image_back.png"
 import Hearts from "../../assets/heart.png"
+import { motion } from "framer-motion"
 import calories from "../../assets/calories.png"
 
 const Hero = () => {
+  const transition = { type: "spring", duration: 3 }
   return (
     <div className="hero">
+      <div className="blur blur-h"></div>
       <div className="left-h">
         <Header></Header>
 
         {/* add section */}
         <div className="the-best-ad">
-          <div></div>
+          <motion.div
+            initial={{ left: "183px" }}
+            whileInView={{ left: "8px" }}
+            transition={{ ...transition, type: "tween" }}></motion.div>
           <span>Stay Fit , Stay Happy.</span>
         </div>
 
@@ -60,13 +66,20 @@ const Hero = () => {
       <div className="right-h">
         <button className="btn">Join Now</button>
 
-        <div className="heart-rate">
+        <motion.div
+          className="heart-rate"
+          transition={{ ...transition, type: "tween" }}
+          initial={{ right: "-1rem" }}
+          whileInView={{ right: "2rem" }}>
           <img src={Hearts} alt="" />
           <span>Heart Rate</span> <span>116 bpm</span>
-        </div>
+        </motion.div>
         {/* hero image */}
         <img src={hero_image} className="hero-image" alt="hero image" />
-        <img
+        <motion.img
+          initial={{ right: "11rem" }}
+          whileInView={{ right: "20rem" }}
+          transition={transition}
           src={hero_image_back}
           className="hero-image-back"
           alt="hero image back"

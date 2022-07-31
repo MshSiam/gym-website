@@ -9,6 +9,7 @@ const Footer = () => {
   return (
     <div className="footer-container">
       <hr />
+
       <div className="footer">
         <div className="social-links">
           <a target="_blank" href="https://github.com/MshSiam">
@@ -30,6 +31,8 @@ const Footer = () => {
           <p>&copy; Reserved by Fit Gym Club || Muhammad Siam</p>
         </div>
       </div>
+      <div className="blur blur-1"></div>
+      <div className="blur blur-2"></div>
     </div>
   )
 }

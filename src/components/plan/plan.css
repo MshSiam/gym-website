@@ -75,3 +75,15 @@
 .plan > :nth-child(2) > #btn {
   color: orange;
 }
+.blur-1 {
+  width: 32rem;
+  height: 23rem;
+  top: 6rem;
+  left: 0rem;
+}
+.blur-2 {
+  width: 32rem;
+  height: 23rem;
+  top: 10rem;
+  right: 0rem;
+}
