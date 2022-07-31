@@ -55,3 +55,20 @@
 ::placeholder {
   color: aliceblue;
 }
+
+@media screen and (max-width: 768px) {
+  .join {
+    flex-direction: column;
+  }
+  .left-j {
+    font-size: xx-large;
+  }
+
+  .right-j {
+    padding: 2rem;
+  }
+
+  .btn-j {
+    padding: 8px;
+  }
+}

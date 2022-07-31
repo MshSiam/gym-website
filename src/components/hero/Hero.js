@@ -6,11 +6,12 @@ import hero_image_back from "../../assets/hero_image_back.png"
 import Hearts from "../../assets/heart.png"
 import { motion } from "framer-motion"
 import calories from "../../assets/calories.png"
+import NumberCounter from "number-counter"
 
 const Hero = () => {
   const transition = { type: "spring", duration: 3 }
   return (
-    <div className="hero">
+    <div className="hero" id="home">
       <div className="blur blur-h"></div>
       <div className="left-h">
         <Header></Header>
@@ -44,13 +45,22 @@ const Hero = () => {
         {/* figures */}
         <div className="figures">
           <div>
-            <span>+12</span> <span>Expert Trainer</span>
+            <span>
+              <NumberCounter end={80} start={10} delay="5" preFix="+" />
+            </span>{" "}
+            <span>Expert Trainer</span>
           </div>
           <div>
-            <span>+330</span> <span>Members Joined</span>
+            <span>
+              <NumberCounter end={330} start={100} delay="5" preFix="+" />
+            </span>{" "}
+            <span>Members Joined</span>
           </div>
           <div>
-            <span>+50</span> <span>Fitness Programs</span>
+            <span>
+              <NumberCounter end={50} start={10} delay="5" preFix="+" />
+            </span>{" "}
+            <span>Fitness Programs</span>
           </div>
         </div>
 
