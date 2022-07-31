@@ -1,0 +1,38 @@
+.footer-container {
+  position: relative;
+}
+
+.footer-container > hr {
+  border: 2px solid rgb(163, 160, 160);
+}
+
+.footer {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 4rem;
+}
+
+.social-links > a > img {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.logo-f > img {
+  width: 10rem;
+  margin-top: 3rem;
+}
+
+.text {
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 1rem;
+}

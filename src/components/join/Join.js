@@ -12,7 +12,7 @@ const Join = () => {
 
     emailjs
       .sendForm(
-        "service_3rawkfc",
+        "service_oujy145",
         "template_er0x1fw",
         form.current,
         "user_laJsMsMHHLraltzBdFk4s"
